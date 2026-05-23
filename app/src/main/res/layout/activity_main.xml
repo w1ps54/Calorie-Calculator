@@ -2,62 +2,317 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
+
     android:orientation="vertical"
+
+    android:background="#F5F7FA"
+
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/etFoodName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Название продукта"
-        android:inputType="text" />
+    <TextView
+        android:layout_width="wrap_content"
 
-    <EditText
-        android:id="@+id/etCalories"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Калории"
-        android:inputType="number" />
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Добавить" />
+        android:text="Calorie Calculator"
+
+        android:textSize="28sp"
+
+        android:textStyle="bold"
+
+        android:textColor="#212121" />
 
     <TextView
-        android:id="@+id/tvLimitCalories"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+
+        android:text="Контролируй свое питание"
+
+        android:textColor="#757575"
+
+        android:textSize="15sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+
+        app:cardCornerRadius="24dp"
+
+        app:cardElevation="6dp"
+
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:hint="Название продукта"
+
+                app:boxCornerRadiusBottomEnd="18dp"
+
+                app:boxCornerRadiusBottomStart="18dp"
+
+                app:boxCornerRadiusTopEnd="18dp"
+
+                app:boxCornerRadiusTopStart="18dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFoodName"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+
+                android:hint="Калории"
+
+                app:boxCornerRadiusBottomEnd="18dp"
+
+                app:boxCornerRadiusBottomStart="18dp"
+
+                app:boxCornerRadiusTopEnd="18dp"
+
+                app:boxCornerRadiusTopStart="18dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCalories"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdd"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="56dp"
+
+                android:layout_marginTop="16dp"
+
+                android:text="Добавить продукт"
+
+                android:textSize="16sp"
+
+                app:cornerRadius="18dp"
+
+                app:backgroundTint="#4CAF50"
+
+                app:icon="@android:drawable/ic_input_add"
+
+                app:iconTint="@android:color/white" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="18dp"
+
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+
+            android:layout_height="110dp"
+
+            android:layout_weight="1"
+
+            android:layout_marginEnd="8dp"
+
+            app:cardCornerRadius="22dp"
+
+            app:cardBackgroundColor="#4CAF50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Лимит"
+
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvLimitCalories"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="0"
+
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="24sp"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+
+            android:layout_height="110dp"
+
+            android:layout_weight="1"
+
+            android:layout_marginStart="8dp"
+
+            app:cardCornerRadius="22dp"
+
+            app:cardBackgroundColor="#FF9800">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Съедено"
+
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTotalCalories"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="0"
+
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="24sp"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+
+        android:layout_height="90dp"
+
         android:layout_marginTop="16dp"
-        android:text="Лимит: 0 ккал"
-        android:textSize="18sp"
-        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tvTotalCalories"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Съедено: 0 ккал"
-        android:textSize="18sp" />
+        app:cardCornerRadius="22dp"
 
-    <TextView
-        android:id="@+id/tvRemainingCalories"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Осталось: 0 ккал"
-        android:textSize="18sp" />
+        app:cardBackgroundColor="#2196F3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Осталось"
+
+                android:textColor="#FFFFFF"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvRemainingCalories"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="0"
+
+                android:textColor="#FFFFFF"
+
+                android:textSize="28sp"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewFoods"
+
         android:layout_width="match_parent"
+
         android:layout_height="0dp"
+
         android:layout_weight="1"
-        android:layout_marginTop="12dp" />
+
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>
