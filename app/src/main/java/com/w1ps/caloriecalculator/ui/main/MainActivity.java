@@ -1,4 +1,4 @@
-package com.w1ps.caloriecalculator;
+package com.w1ps.caloriecalculator.ui.main;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.room.Room;
 
 import com.w1ps.caloriecalculator.databinding.ActivityMainBinding;
+import com.w1ps.caloriecalculator.data.AppDatabase;
+import com.w1ps.caloriecalculator.data.FoodItem;
+import com.w1ps.caloriecalculator.ui.start.StartActivity;
 
 import java.util.ArrayList;
 import java.util.List;

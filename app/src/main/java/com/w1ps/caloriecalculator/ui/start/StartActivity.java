@@ -1,4 +1,4 @@
-package com.w1ps.caloriecalculator;
+package com.w1ps.caloriecalculator.ui.start;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +8,7 @@ import android.text.TextUtils;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.w1ps.caloriecalculator.databinding.ActivityStartBinding;
+import com.w1ps.caloriecalculator.ui.main.MainActivity;
 
 public class StartActivity extends AppCompatActivity {
 

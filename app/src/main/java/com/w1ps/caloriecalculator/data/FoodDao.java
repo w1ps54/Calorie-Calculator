@@ -1,4 +1,4 @@
-package com.w1ps.caloriecalculator;
+package com.w1ps.caloriecalculator.data;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
