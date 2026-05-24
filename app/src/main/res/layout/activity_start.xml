@@ -1,137 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
-
     android:gravity="center"
-
     android:padding="24dp"
-
     android:background="#F5F7FA">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="Добро пожаловать"
-
         android:textStyle="bold"
-
         android:textSize="30sp"
-
         android:textColor="#212121" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="8dp"
-
         android:text="Введите свои данные"
-
         android:textSize="16sp"
-
         android:textColor="#757575" />
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
-
         android:layout_marginTop="28dp"
-
         app:cardCornerRadius="28dp"
-
         app:cardElevation="6dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
-
             android:orientation="vertical"
-
             android:padding="20dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
-
                 android:hint="Вес (кг)">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etWeight"
-
                     android:layout_width="match_parent"
-
                     android:layout_height="wrap_content"
-
                     android:inputType="numberDecimal" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="12dp"
-
                 android:hint="Рост (см)">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etHeight"
-
                     android:layout_width="match_parent"
-
                     android:layout_height="wrap_content"
-
                     android:inputType="numberDecimal" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="12dp"
-
                 android:hint="Возраст">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etAge"
-
                     android:layout_width="match_parent"
-
                     android:layout_height="wrap_content"
-
                     android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnContinue"
-
                 android:layout_width="match_parent"
-
                 android:layout_height="56dp"
-
                 android:layout_marginTop="20dp"
-
                 android:text="Продолжить"
-
                 android:textSize="16sp"
-
                 app:cornerRadius="18dp"
-
                 app:backgroundTint="#4CAF50" />
 
         </LinearLayout>
